@@ -1,0 +1,229 @@
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video, p, div, body, h1, h2, h3, h4, h5, h6, ul, li, a , button{
+	font-family:'amaranthregular';
+}
+a
+{
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6
+{
+	text-align: center;
+}
+body
+{
+background: #000 url(../assets/body.png) repeat center top;
+font: 1.61em/150% 'amaranthregular', Arial, Helvetica, sans-serif;
+color: #FFF;
+position: relative;
+padding-top:50px;
+}
+@font-face
+{
+font-family: 'amaranthregular';
+    src: url('../fonts/amaranth-regular.eot');
+    src: url('../fonts/amaranth-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/amaranth-regular.woff2') format('woff2'),
+         url('../fonts/amaranth-regular.woff') format('woff'),
+         url('../fonts/amaranth-regular.ttf') format('truetype'),
+         url('../fonts/amaranth-regular.svg#amaranthregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#home .navbar
+{
+font-weight:bold;
+padding: 0 100px;
+}
+#home .navbar-inverse .navbar-nav > .active > a, 
+#home .navbar-inverse .navbar-nav > .active > a:hover, #home .navbar-inverse .navbar-nav > .active > a:focus
+{
+	background-color: transparent;
+    border-bottom: 7px solid #e96d63;
+    outline: none;
+}
+.arrowtop
+{
+	position: fixed;
+	bottom: 21px;
+	right: 10px;
+}
+/*Container Sections*/
+h1, h2, h3, h4, h5, h6
+{
+padding: 10px 0;
+margin: 0;
+}
+.divider
+{
+content:""; 
+height:1px;
+background:#E9E0E0;
+width:100%;
+display:block;
+opacity: 0.7;
+}
+.sectionDivider
+{
+background-color: #E96D63;
+width: 100%;
+padding: 10px 0;
+content:"";
+}
+.bigimage
+{
+width: 100%;
+}
+.row
+{
+padding: 40px 0;
+margin: 0;
+}
+.spacing
+{
+padding-top: 40px;
+}
+/*Modals*/
+.modal-content
+{
+background-color: #000;
+border: 1px solid #fff;
+}
+.modal-content button.close
+{
+color: #fff;
+opacity: 0.7;
+}
+/*Thumbnail*/
+.row .thumbnail
+{
+background-color: transparent;
+border: none;
+}
+.row .thumbnail .caption
+{
+color: #fff;
+text-align: center;
+}
+/*Logos*/
+.box-flips
+{
+	width: 18%;
+	margin:0 auto;
+}
+.circle
+{
+border-radius: 50%;
+border: 1px solid #fff;
+margin: 0 auto;
+text-align: center;
+}
+.flipface
+{
+background-color: #fff;
+padding: 41% 18%;
+}
+.flipback
+{
+background-color: #ccc;
+padding: 41% 34%;
+}
+.flip-container 
+{
+perspective: 1000;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper 
+{
+transform: rotateY(180deg);
+}
+.flip-container, .front, .back 
+{
+margin: 0 auto;
+width: 85%;
+height: 79px;
+color: #000;
+}
+.flipper 
+{
+transition: 0.6s;
+transform-style: preserve-3d;
+position: relative;
+margin-top:66px;
+}
+.front, .back 
+{
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+.front 
+{
+z-index: 2;
+transform: rotateY(0deg);
+}
+.back 
+{
+transform: rotateY(180deg);
+}
+/*Footer*/
+footer
+{
+background-color:#333;
+color:#fff;
+padding:20px;margin-top:15px;
+}
+/*Glyph images*/
+.arrowtop .glyphicon
+{
+	font-size: 1.5em;
+	opacity: 0.6;
+}
+.skillsicon
+{
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.skillsicon .glyphicon
+{
+	padding: 58% 40%;
+}
+
+
+/*Media Queries*/
+
+/******** smaller than 980px******/
+@media screen and (max-width: 980px){
+.skillsicon
+{
+	display: none;
+}
+.box-flips
+{
+	width: 70%;
+}
+#home .navbar
+{
+	padding: 0;
+}
+}
+/***********/
+@media screen and (max-width: 650px){
+.box-flips
+{
+	width: 22%;
+}
+#home .navbar
+{
+	padding: 0;
+}
+}
+/**********/
+@media screen and (max-width: 480px){
+.box-flips
+{
+	width: 75%;
+}
+#home .navbar
+{
+	padding: 0;
+}
